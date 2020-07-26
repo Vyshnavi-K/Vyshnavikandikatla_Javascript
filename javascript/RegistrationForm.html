@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  background-image: url("https://bayofseo.com/wp-content/uploads/2019/04/web-design-2906159_960_720.jpg");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center;
+  background-size: cover; 
+
+}
+h1{
+  text-align: center;
+  padding: 20px;
+} 
+label{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:25px;
+  font-style: normal;
+  text-align: left;
+  float: left;
+}
+.register
+{
+  width: 400px;
+  margin: 0px 0px 0px 700px;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+}
+#register{
+  margin-left: 10px;
+}
+[name=name]{
+  width: 300px;
+  border: 5px;
+  padding: 7px;
+  outline: 0px;
+  border-radius: 3px;
+  float: left;
+}
+#submit{
+  width: 75px; 
+  padding: 7px;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  border: 10px;
+  border-radius: 3px;
+  outline: 10;
+  float: center;
+}
+#gender
+{
+  float:left;
+}
+::placeholder{
+  color: black;
+}</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+        <script src="Validation.js">
+        </script>
+		<title> Registration Form </title>
+	</head>
+	<body align="center">
+        
+		<div class="register" id="error">
+            <h1>Registration Form</h1>
+				<form method = "post" id = "register" action="">
+
+					<label> First Name : </label><br><br>
+                    <input type="text" name="name" id="fname" placeholder="Enter your First Name"><br><br>
+                    
+					<label> Last Name : </label><br><br>
+                    <input type="text" name="name" id="lname" placeholder="Enter your Last Name"><br><br>
+
+                    <label> Mobile Number : </label><br><br>
+                    <input type="tel" name="name" id="mnum" placeholder="Enter your Mobile Number"><br><br>
+                    
+					<label> Date of Birth : </label><br><br>
+                    <input type="date" name="name" id="da"><br><br>
+
+                    <label> Gender : </label><br><br>
+
+                    <input type="radio" name="gender" id="gender" value="male"><label> Male </label>
+                    <input type="radio" name="gender" id="gender" value="female"><label> Female </label>
+                    <input type="radio" name="gender" id="gender" value="other"><label> Other </label><br><br>
+
+                    <label> Email Id : </label><br><br>	
+                    <input type="email" name="name" id="email" placeholder="Enter your email id"><br><br>
+
+                    <label> Password : </label><br><br>	
+                    <input type="password" name="name" id="pwd" placeholder="Password"><br><br>
+                  
+                    <input type="submit" value="Submit" id="submit" onclick="validate()">	
+                </form>
+		</div>
+	</body>
+</html
